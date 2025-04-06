@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0056b3; /* Azul más oscuro */
+  color: white; /* Texto blanco para contraste */
+}
+
+.header .logo {
+  font-size: 2rem; /* Aumenta el tamaño de la palabra "Salitre" */
+  font-weight: bold; /* Hace que el texto sea más destacado */
+  flex-grow: 1; /* Permite que ocupe más espacio en el header */
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0056b3;
+}
+
+.menu-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* Asegúrate de que los enlaces sean visibles sobre el fondo azul */
+  padding: 5px 10px; /* Espaciado interno para los enlaces */
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto hover con fondo transparente */
+  border-radius: 5px; /* Bordes redondeados para el efecto hover */
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #0056b3; /* Azul más oscuro para el menú desplegable */
+    border: 1px solid #003f7f; /* Un borde más oscuro para contraste */
+    padding: 10px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    color: white; /* Asegúrate de que los enlaces sean visibles en el menú desplegable */
+    padding: 10px;
+  }
+}
