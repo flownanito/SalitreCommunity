@@ -50,7 +50,7 @@ The project is available in the following languages:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/salitre
+   git clone https://github.com/flownanito/SalitreCommunity.git
 
 
 ## 📋 Key Features
@@ -112,5 +112,5 @@ Project on GitHub: **Salitre**
 ## 📝 Other Sections
 
 - **FAQ** - A list of frequently asked questions will be added soon.
-- **User Feedback** - Will add a feedback system in future versions.
+- **flownanito** - Will add a feedback system in future versions.
 - **Accessibility** - Ongoing improvements to meet WCAG standards.
