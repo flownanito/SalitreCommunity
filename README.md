@@ -51,3 +51,66 @@ The project is available in the following languages:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/salitre
+
+
+## 📋 Key Features
+
+- User authentication with Firebase.
+- Logging and tracking fishing trips.
+- Upload and share photos of catches.
+- Community forum for discussions and tips.
+- Responsive design for mobile users.
+
+## 🛣️ Roadmap
+
+- Implement user reviews for fishing spots.
+- Add a search feature for fishing locations.
+- Improve SEO and accessibility.
+- Integrate a weather API for fishing conditions.
+
+## 🤝 Contributions
+
+Contributions are welcome! If you have ideas to improve this project, follow these steps:
+
+1. Fork the project.
+2. Create a branch for your feature:
+    ```bash
+    git checkout -b feature/NewFeature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add new feature'
+    ```
+4. Push to your branch:
+    ```bash
+    git push origin feature/NewFeature
+    ```
+5. Open a Pull Request.
+
+## 📞 Contact
+
+Project on GitHub: **Salitre**
+
+## 🏆 Acknowledgements
+
+- **React** - Frontend framework.
+- **Firebase** - Authentication and database.
+- **FontAwesome** - Icons for the UI.
+- **CSS3** - Styling framework.
+
+## 🛠️ Third-Party Components Used
+
+- **Firebase** - For user authentication and data storage: [Firebase](https://firebase.google.com/).
+- **FontAwesome** - For icons in the UI: [FontAwesome](https://fontawesome.com/).
+
+## 🔗 Tutorials and Resources Used
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Firebase Authentication Documentation](https://firebase.google.com/docs/auth)
+- [CSS Flexbox Tutorial](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+## 📝 Other Sections
+
+- **FAQ** - A list of frequently asked questions will be added soon.
+- **User Feedback** - Will add a feedback system in future versions.
+- **Accessibility** - Ongoing improvements to meet WCAG standards.
