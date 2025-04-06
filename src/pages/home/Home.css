@@ -1,0 +1,203 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #E0F7FA, #B3E5FC);
+  color: #01579B;
+  text-align: center;
+}
+
+/* Carrusel */
+.carousel-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  animation: slide 9s infinite;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 600px; /* Ajustado para pantallas más pequeñas */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Primera imagen */
+  }
+  33.33% {
+    transform: translateX(-100%); /* Segunda imagen */
+  }
+  66.66% {
+    transform: translateX(-200%); /* Tercera imagen */
+  }
+  100% {
+    transform: translateX(0); /* Vuelve a la primera imagen */
+  }
+}
+
+/* Contenedor de noticias */
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas para ordenadores */
+  gap: 20px;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.news-item {
+  background: #01579B; /* Azul oscuro */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  /* transition: transform 0.3s ease, background 0.3s ease; */
+}
+
+.news-item:hover {
+  background: #0288D1; /* Azul más claro al pasar el mouse */
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.news-item:active {
+  transform: translateY(0); /* Vuelve a su posición al hacer clic */
+}
+
+/* Contenedor de tarjetas de noticias */
+.news-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptable */
+  gap: 20px;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.news-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+  text-align: left;
+  color: #01579B;
+  font-weight: bold;
+}
+
+/* Contenedor de miembros */
+.miembros-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.miembro {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.miembro:hover {
+  transform: translateY(-5px);
+}
+
+.miembro img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #0288D1;
+}
+
+/* Responsive Design */
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .carousel-container {
+    width: 100%;
+  }
+
+  .news-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  }
+
+  .miembros-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  header {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr; /* Una columna */
+  }
+
+  .miembro {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .miembro img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr; /* Una columna */
+  }
+
+  .miembro {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .miembro img {
+    width: 80px;
+    height: 80px;
+  }
+}
